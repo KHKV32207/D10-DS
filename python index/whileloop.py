@@ -69,18 +69,76 @@
   
   
   
- """to find the perfect square"""
+"""to find the perfect square"""
  
-num=int(input('enter the number:'))
-x=1
-is_perfect_square=False
-while x<=num//2:
-    if x*x==num:
-            is_perfect_square=True
-    x+=1
-if is_perfect_square==True:       
-    print('it is a perfect square')
-else:
-    print('it is not a perfect square')    
+# num=int(input('enter the number:'))
+# x=1
+# is_perfect_square=False
+# while x<=num//2:
+#     if x*x==num:
+#             is_perfect_square=True
+#     x+=1
+# if is_perfect_square==True:       
+#     print('it is a perfect square')
+# else:
+#     print('it is not a perfect square')    
     
     
+    
+"""to check the given number armstrong or not"""
+# num=int(intput('enter the number:'))
+# sum=0
+# x=num
+# while x>0:
+#     id=x%10
+#     sum+=id**3
+#     x=x//10
+    
+    
+    
+# h = [10,20,'python',30,50,'java']
+# s1 = 0
+# for c in h:
+#     if type(c) == int:
+#         s1+=c
+# print(s1)
+
+"""print even value multiply by 2"""
+
+h = [10,12,13,14,15]
+k = []
+for x in h:
+    if x%2==0:
+        x*=2
+        k.append(x)
+    else:
+        k.append(x)
+print(k)            
+
+
+#even index
+tem = []
+for x in range(len(h)):
+    if x%2==0:
+        tem.append(h[x]*2)
+    else:
+        tem.append(h[x])
+print(tem)
+
+"""without using sort find ascending order"""
+
+res = [10,9,5,15,13]
+for x in range(len(res)):
+    for y in range(x+1,len(res)):
+        if res[x]>res[y]:
+            res[x],res[y]=res[y],res[x]
+print(res)
+
+#descending order
+
+res = [10,9,5,15,13]
+for x in range(len(res)):
+    for y in range(x+1,len(res)):
+        if res[x]<res[y]:
+            res[x],res[y]=res[y],res[x]
+print(res)
